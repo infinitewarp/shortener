@@ -1,0 +1,16 @@
+venv
+.env
+*.pyc
+*.pyo
+staticfiles
+.DS_Store
+._*
+.idea
+__pycache__
+db.sqlite3
+htmlcov
+.tox
+.cache
+.coverage
+coverage.xml
+coverage.html

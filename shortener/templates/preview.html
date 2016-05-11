@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="page-header">
+<h1>{% trans "1lnk Short Link" %}</h1>
+</div>
+
+<div class="previewurl">
+<a href="{{short_url}}" class="shorturl">{{short_iri}}</a>
+{% trans "redirects to" %}
+<a href="{{full_url}}" class="fullurl">{{full_iri}}</a></div>
+</div>
+
+<div class="infourl col-sm-offset-2 col-sm-8">
+{% if characters_saved > 0 %}
+  <div class="alert alert-success" role="alert">
+  {% blocktrans %}You save {{characters_saved}} character{{characters_saved|pluralize}} by using this short link!{% endblocktrans %}
+  </div>
+{% elif characters_saved < 0 %}
+  <div class="alert alert-warning" role="alert">
+  {% trans "Oh dear. I'm afraid our \"short\" link is actually longer than your original link." %}
+  </div>
+{% elif short_url == full_url %}
+  <div class="alert alert-danger" role="alert">
+  {% trans "You managed to create a recursive link. Are you sure you wanted this?" %}
+  </div>
+{% elif characters_saved == 0 %}
+  <div class="alert alert-info" role="alert">
+  {% trans "Wow! The \"short\" link is actually the same length as the \"long\" link." %}
+  </div>
+{% endif %}
+</div>
+
+{% endblock %}

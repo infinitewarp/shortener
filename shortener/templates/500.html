@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block bodyattributes %} class="servererror" {% endblock %}
+
+{% block content %}
+<div class="page-header">
+<h1>{% trans "Server Error" %}</h1>
+</div>
+
+
+{% endblock %}

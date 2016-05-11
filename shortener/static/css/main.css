@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.previewurl {
+    margin-bottom: 1em;
+    width: 100%;
+    overflow: scroll;
+}
+
+.previewurl a{
+    display: block;
+}
+
+.infourl .alert {
+    text-align: center;
+}
+
+.previewurl, .shorturl, .fullurl {
+    display: block;
+    text-align: center;
+}
+
+.shorturl {
+    font-size: 2em;
+}
+
+.fullurl {
+    font-size: 1.25em;
+}
+
+body.notfound {
+    background-image: url('https://i.imgur.com/fgUZFoA.png');
+    background-position: 50% 140px;
+    background-size: 277px 277px;
+    background-repeat: no-repeat;
+}
+
+body.servererror {
+    background-image: url('https://i.imgur.com/S8Ls8RC.png');
+    background-position: 50% 140px;
+    background-size: 261px 369px;
+    background-repeat: no-repeat;
+}
