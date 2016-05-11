@@ -127,8 +127,11 @@ like this need integrations with external monitoring services to provide data
 to you (and to the general public would be nice).
 
 The current implementation has integration with
-[New Relic APM](https://newrelic.com/application-monitoring). I'd love to show
-what this looks like; maybe I'll add a screenshot of the dashboard here later.
+[New Relic APM](https://newrelic.com/application-monitoring). Here's a
+screenshot of how New Relic looked when I was doing some minor load-testing of
+this app on the free Heroku instance:
+
+![screenshot](https://i.imgur.com/2MElgUX.png)
 
 There are lots of other options to consider for monitoring site availability
 and performance. I would have liked to try to integrate with a few more of
